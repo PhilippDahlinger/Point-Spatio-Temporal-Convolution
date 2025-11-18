@@ -8,8 +8,6 @@ Date: July 2020
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-from torch import Tensor
 
 import math
 import os
@@ -18,7 +16,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(BASE_DIR)
 
 import pointnet2_utils
-from typing import List
 
 def kaiming_uniform(tensor, size):
     fan = size[1] * size[2] * size[3]
