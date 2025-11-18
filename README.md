@@ -11,11 +11,11 @@ Furthermore, we incorporate the proposed PST convolution into a deep network, na
 
 ## Installation
 
-The code is tested with Red Hat Enterprise Linux Workstation release 7.7 (Maipo), g++ (GCC) 8.3.1, PyTorch v1.2, CUDA 10.2 and cuDNN v7.6.
+The code is tested with Ubuntu, PyTorch v2.9, CUDA 12.5 
 
-Install PyTorch v1.2:
+Install PyTorch v2.9:
 ```
-pip install torch==1.2.0 torchvision==0.4.0
+pip install torch~=2.9.0 torchvision~=0.24
 ```
 
 Compile the CUDA layers for [PointNet++](http://arxiv.org/abs/1706.02413), which we used for furthest point sampling (FPS) and radius neighbouring search:
